@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`compile works 1`] = `
+"
+      <div>
+          Text 1
+          <span>42</span>
+          <span>Simon</span>
+      </div>
+    "
+`;

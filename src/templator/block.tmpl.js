@@ -7,7 +7,7 @@ window.blockTemplate = (function() {
 `;
 })();
 
-function get(obj, path, defaultValue) {
+export function get(obj, path, defaultValue) {
   const keys = path.split('.');
 
   let result = obj;
@@ -20,8 +20,4 @@ function get(obj, path, defaultValue) {
   }
 
   return result ?? defaultValue; // "??" — [оператор нулевого слияния](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator) (не поддерживается старыми браузерами, для них нужен полифилл)
-}
-
-export default {
-  get
 }

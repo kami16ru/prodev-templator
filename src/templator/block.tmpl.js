@@ -7,7 +7,7 @@ window.blockTemplate = (function() {
 `;
 })();
 
-function get(obj, path, defaultValue) {
+export function get(obj, path, defaultValue) {
   const keys = path.split('.');
 
   let result = obj;

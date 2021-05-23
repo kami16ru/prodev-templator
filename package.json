@@ -1,0 +1,32 @@
+{
+  "name": "prodev-templator",
+  "version": "0.1.0",
+  "description": "Light js templator",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kami16ru/prodev-templator.git"
+  },
+  "files": [
+    "src"
+  ],
+  "author": "Kamil Khismatullin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kami16ru/prodev-templator/issues"
+  },
+  "homepage": "https://github.com/kami16ru/prodev-templator#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.14.2",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3"
+  }
+}

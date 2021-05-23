@@ -20,6 +20,16 @@ export default class Templator {
         const tmplValue = key[1].trim();
         // get — функция, написанная ранее в уроке
         const data = this._getData(ctx, tmplValue);
+
+        if (typeof data === "function") {
+          window[tmplValue] = data;
+          tmpl = tmpl.replace(
+            new RegExp(key[0], "gi"),
+            `window.${key[1].trim()}()`
+          );
+          continue;
+        }
+
         tmpl = tmpl.replace(new RegExp(key[0], "gi"), data);
       }
     }

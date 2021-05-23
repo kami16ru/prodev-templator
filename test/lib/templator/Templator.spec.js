@@ -1,4 +1,4 @@
-import Templator from "../../src/templator/Templator"
+import Templator from "../../../src/lib/templator/Templator"
 
 describe('Class Templator', () => {
   test('new works', () => {
